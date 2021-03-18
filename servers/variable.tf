@@ -8,3 +8,7 @@ variable "image_id" {
     error_message = "The image_id must be a valid AMI starting with \"ami-\"."
   }
 }
+
+variable "servers" {
+  
+}
