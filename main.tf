@@ -16,7 +16,7 @@ provider "aws" {
   alias = "east"
 }
 
-# provider "aws" {
-#   region = "us-west-2"
-#   alias = "west"
-# }
+provider "aws" {
+  region = "us-west-2"
+  alias = "west"
+}
