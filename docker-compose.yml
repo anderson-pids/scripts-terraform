@@ -4,8 +4,7 @@ services:
     image: 'hashicorp/terraform:light'
     volumes:
       - .:/app
+      - ~/.aws:/home/app/.aws
     working_dir: '/app'
     entrypoint: ""
-    environment:
-      - AWS_ACCESS_KEY_ID=$AWS_ACCESS_KEY_ID
-      - AWS_SECRET_ACCESS_KEY=$AWS_SECRET_ACCESS_KEY
+    
