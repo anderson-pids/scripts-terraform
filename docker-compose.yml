@@ -3,8 +3,7 @@ services:
   terraform:
     image: 'hashicorp/terraform:light'
     volumes:
-      - .:/app
-      - ~/.aws:/home/app/.aws
+      - ./src:/app
+      - ~/.aws:/root/.aws
     working_dir: '/app'
     entrypoint: ""
-    
