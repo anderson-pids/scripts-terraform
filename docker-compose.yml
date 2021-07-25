@@ -4,6 +4,7 @@ services:
     image: 'hashicorp/terraform:0.11.15'
     volumes:
       - ./src:/app
+      - ~/.ssh:/root/.ssh
       - ~/.aws:/root/.aws
     working_dir: '/app'
     entrypoint: ""
